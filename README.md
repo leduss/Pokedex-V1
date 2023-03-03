@@ -1,38 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Bienvenue dans le README pour un Pokédex utilisant NEXT JS, REACT QUERY et TAILWIND.
+Introduction
 
-## Getting Started
+Ce projet est un exemple d'application Pokédex utilisant les technologies NEXT JS, REACT QUERY et TAILWIND.
 
-First, run the development server:
+L'api pokémon : https://pokebuildapi.fr/api/v1
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Pour installer ce projet, suivez les étapes suivantes :
 
-You can start editing the page by modifying `pages/index.jsx`. The page auto-updates as you edit the file.
+    Clonez le dépôt en utilisant la commande suivante :
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+    bash
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+git clone https://github.com/votre-nom-d'utilisateur/nom-du-repo.git
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Installez les dépendances en utilisant la commande suivante :
 
-## Learn More
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+Lancez l'application en utilisant la commande suivante :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    L'application sera accessible sur http://localhost:3000.
 
-## Deploy on Vercel
+Fonctionnalités
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+L'application Pokédex a les fonctionnalités suivantes :
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    Affichage d'une liste de tous les Pokémons avec leurs noms et images.
+    Recherche de Pokémons spécifiques par leur nom, leur Pokedex ID ou leur type.
+    Affichage des détails d'un Pokémon spécifique.
+    Gestion des erreurs lors de la récupération des données depuis l'API.
+
+Technologie
+
+L'application Pokédex utilise les technologies suivantes :
+
+    NEXT JS : Framework React pour les applications web.
+    REACT QUERY : Bibliothèque de gestion des requêtes pour React.
+    TAILWIND : Bibliothèque de styles CSS pour les projets web.
+
+Conclusion
+
+Nous espérons que ce projet vous a été utile pour apprendre comment construire un Pokédex avec NEXT JS, REACT QUERY et TAILWIND en utilisant l'API PokéAPI. Si vous avez des questions ou des commentaires, n'hésitez pas à nous contacter.
