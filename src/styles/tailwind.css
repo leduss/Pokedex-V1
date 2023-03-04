@@ -118,8 +118,25 @@
     width: 150px;
     height: 60px;
     overflow: hidden;
-    border: 1px solid black;
     border-radius: 50px;
+    border: 1px solid black;
+    padding-left: 35px;
+    box-shadow: 2.9px 2.9px 2.2px rgba(0, 0, 0, 0.019),
+    5.2px 5.2px 5.3px rgba(0, 0, 0, 0.023),
+    7px 7px 10px rgba(0, 0, 0, 0.025),
+    8.7px 8.7px 17.9px rgba(0, 0, 0, 0.024),
+    11.3px 11.3px 33.4px rgba(0, 0, 0, 0.023),
+    20px 20px 80px rgba(0, 0, 0, 0.02);
+}
+
+.button1{
+    position: relative;
+    width: 150px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50px;
+    border: 1px solid white;
+    color: white;
     padding-left: 35px;
     box-shadow: 2.9px 2.9px 2.2px rgba(0, 0, 0, 0.019),
     5.2px 5.2px 5.3px rgba(0, 0, 0, 0.023),
@@ -181,10 +198,32 @@
     color: transparent;
 }
 
+.button1:hover .pika {
+    top: 90%;
+}
+
+.button1:hover .pokeball {
+    animation: none;
+    transform: scale(0);
+}
+
+.button1:hover .go1 {
+    color: transparent;
+}
+
 .go {
     position: absolute;
     top: 10%;
     left: 25%;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.go1 {
+    position: absolute;
+    top: 27%;
+    left: 40%;
     font-size: 16px;
     font-weight: 900;
     letter-spacing: 1px;

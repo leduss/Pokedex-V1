@@ -18,9 +18,9 @@ const PrevPokemon = ({id}) => {
         return <p>loading</p>;
     }
     return (
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center w-full">
             <picture>
-                <img src={data.image} alt="" className="w-32"/>
+                <img src={data.image} alt="" className="w-32 max-sm:w-44"/>
             </picture>
             <p className="text2">{data.name}</p>
         </div>

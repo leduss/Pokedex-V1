@@ -3,6 +3,8 @@ import { useQuery } from "@tanstack/react-query";
 import Loader from "../components/Loader";
 import PokemonListItem from "../components/PokemonListItem";
 import Link from "next/link";
+import Popup from "../components/Popup";
+import Button from "../components/Button";
 
 
 const getPokemon = async () =>
@@ -11,6 +13,10 @@ const getPokemon = async () =>
 
 export default function Pokemon() {
     const [search, setSearch] = useState("");
+    const [popup, setPopup] = useState(false);
+    const handlePopup = () => {
+        setPopup(!popup);
+    }
     const handleChange = (e) => {
         setSearch(e.target.value);
     }
@@ -24,7 +30,11 @@ export default function Pokemon() {
     }
     return (
         <>
-        <div className="flex flex-col items-center w-screen h-screen" id="home">
+        <div className="flex flex-col items-center w-screen h-screen relative" id="home">
+            <div className="absolute top-2 right-2">
+                <Button handleClick={handlePopup} label="Crédits" color="button1" classSpan="go1" />
+            </div>
+            {popup && <Popup popup={popup} setPopup={setPopup} /> }
             <div className="container ">
                 <input placeholder="Nom, numéro pokedex ou type" className="input" type="search" onChange={handleChange} value={search} />
                     <div className="icon">
@@ -36,9 +46,9 @@ export default function Pokemon() {
                         </svg>
                     </div>
             </div>
-            <div className="w-10/12 h-[90%] flex justify-center items-center relative ">
+            <div className="w-full h-[90%] flex justify-center items-center relative ">
             {isLoading && <Loader />}
-                <div className="flex flex-wrap justify-center h-full gap-10 overflow-y-auto duration-500  ">
+                <div className="flex flex-wrap justify-center h-full gap-10 overflow-y-auto duration-500 px-10  ">
                     {isSuccess &&
                          data
                             .filter((poke) =>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-import pokeball from "../assets/pngaaa.com-4750599.png";
+import pokeball from "../assets/pokemon-g69524327d_1280.png";
 
 const Loader = () => {
     return (
@@ -9,8 +9,8 @@ const Loader = () => {
                  src={pokeball}
                  alt="pokeball"
                  className="animate-spin"
-                    width={200}
-                    height={200}
+                    width={300}
+                    height={300}
             />
         </div>
     );

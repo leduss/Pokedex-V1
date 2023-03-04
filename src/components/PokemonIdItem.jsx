@@ -126,12 +126,12 @@ const PokemonIdItem = ({data}) => {
                         );
                 })}
             </div>
-            <div className="w-1/3 max-sm:w-2/3 h-full flex justify-center items-center">
+            <div className="w-1/3 max-sm:w-5/6 h-full flex justify-center items-center">
             <picture>
                 <img src={data.image} alt={data.name}/>
             </picture>
             </div>
-            <div className="w-1/3 max-sm:w-2/3 h-full flex flex-col justify-center items-center gap-20 max-sm:gap-10 max-sm:pb-4" >
+            <div className="w-1/3 max-sm:w-full h-full flex flex-col justify-center items-center gap-20 max-sm:gap-10 max-sm:pb-4" >
                 <div className="w-full flex justify-center gap-10">
                     {data["apiTypes"].map((type, index) => (
                         <div key={index} className=" h-1/3 flex flex-col items-center relative"  >
