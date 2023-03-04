@@ -4,6 +4,7 @@ import {useQuery} from "@tanstack/react-query";
 import Loader from "../../components/Loader";
 import PokemonIdItem from "../../components/PokemonIdItem";
 import Button from "../../components/Button";
+import Error404 from "../404";
 
 const getPokemon = (pokemonId) => {
     return fetch(
@@ -24,8 +25,9 @@ export default function Pokemon() {
     }
     if (isLoading) {
         return <Loader />;
-    } else if (error) {
-        return <p>error</p>;
+    }
+    if (error) {
+        return <Error404 />;
     }
     return (
         <div className="w-screen h-screen m-0 relative">

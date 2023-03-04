@@ -5,6 +5,7 @@ import PokemonListItem from "../components/PokemonListItem";
 import Link from "next/link";
 import Popup from "../components/Popup";
 import Button from "../components/Button";
+import Error404 from "./404";
 
 
 const getPokemon = async () =>
@@ -26,7 +27,7 @@ export default function Pokemon() {
     });
     console.log(data)
     if (error) {
-        return <p>error</p>;
+        return <Error404 />;
     }
     return (
         <>
