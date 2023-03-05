@@ -83,23 +83,23 @@ const PokemonListItem = ({data}) => {
             initial="offscreen"
             whileInView="onscreen"
             viewport={{ once: true, amount: 0.8 }}
-            className={`${colori} w-64 h-96 rounded-2xl drop-shadow-xl flex items-center justify-center relative`}
+            className={`${colori} w-64 max-sm:w-44 h-96 max-sm:h-64 rounded-2xl drop-shadow-xl flex items-center justify-center relative`}
         >
             <div className="h-[93%] w-[92%] bg-white rounded-2xl">
-                <div className="h-20 flex justify-between items-center p-2">
-                    <div className="flex gap-2">
+                <div className="h-20 max-sm:h-16 flex justify-between items-center p-2">
+                    <div className="flex gap-2 max-sm:gap-1">
                         {data["apiTypes"].map((type) => (
                             <picture key={type.id}>
-                                <img src={type.image} alt={type.name} className="w-8 h-8" />
+                                <img src={type.image} alt={type.name} className="w-8 h-8 max-sm:w-5 max-sm:h-5" />
                             </picture>
                         ))}
                     </div>
-                        <h1 className="text-2xl font-bold flex">{data.name}</h1>
+                        <h1 className="text-2xl max-sm:text-lg font-bold flex">{data.name}</h1>
                 </div>
                 <div className={`h-32 flex flex-col justify-end p-1 ${color2}`} />
                 <div className="h-3"/>
                 <picture>
-                    <img src={data.image} alt={data.name} className="absolute top-28 right-0 w-64" />
+                    <img src={data.image} alt={data.name} className="absolute top-28 max-sm:top-20 right-0 max-sm:right-3 w-64 max-sm:w-40" />
                 </picture>
             </div>
         </motion.div>

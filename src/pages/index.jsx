@@ -49,7 +49,7 @@ export default function Pokemon() {
             </div>
             <div className="w-full h-[90%] flex justify-center items-center relative ">
             {isLoading && <Loader />}
-                <div className="flex flex-wrap justify-center h-full gap-10 overflow-y-auto duration-500 px-10  ">
+                <div className="flex flex-wrap justify-center h-full gap-10 max-sm:gap-6 overflow-y-auto duration-500 px-10 max-sm:px-2  ">
                     {isSuccess &&
                          data
                             .filter((poke) =>

@@ -22,7 +22,7 @@ const Popup = ({popup, setPopup}) => {
                     <FaWindowClose className="text-3xl text-red-500"/>
                 </button>
                 <div className="w-full h-full flex flex-col justify-center items-center text-center">
-                <h1 className="mb-4 text-2xl max-sm:text-xl">Cette application a été développé avec</h1>
+                <h1 className="mb-4 text-2xl max-sm:text-xl">Cette application a été développée avec</h1>
                     <h3 className="text-blue-500">API Public: <a href="https://pokebuildapi.fr/api/v1" target="_blank">API Pokebuild</a></h3>
                     <div className="mt-6 flex items-center gap-10 max-sm:gap-6">
                         <div className="flex flex-col items-center gap-1">
